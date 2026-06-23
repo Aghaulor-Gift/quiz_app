@@ -9,15 +9,48 @@
 </head>
 <body>
   <div class="container">
-    <h1>City Quiz</h1>
-    <div id="quiz-container">
-      <div id="question"></div>
-      <div id="options"></div>
-      <button id="next-btn">Next</button>
+    <nav class="navbar">
+      <a href="/" class="logo">City Quiz</a>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!--Quiz header -->
+      <h1>City Quiz</h1>
+    
+
+    <!-- Quiz container -->
+    <div class="quiz-container" id="quiz-container">
+
+      <!-- Questions -->
+      <div class="questions" id="question">
+        1. What is the capital of France?
+      </div>
+      <div class="options" id="options">
+        <label>
+          <input type="radio" name="option" value="A"> A) Berlin
+        </label>
+        <label>
+          <input type="radio" name="option" value="B"> B) Madrid
+        </label>
+        <label>
+          <input type="radio" name="option" value="C"> C) Paris
+        </label>
+        <label>
+          <input type="radio" name="option" value="D"> D) Rome
+        </label>
+      </div>
+      <button class="next-btn" id="next-btn">Next</button>
     </div>
+
+    <!-- Result container -->
     <div id="result-container" style="display: none;">
-      <h2>Your Score: <span id="score"></span></h2>
-      <button id="restart-btn">Restart Quiz</button>
+      <h2>Your Score: <span id="score">0</span></h2>
+      <button class="restart-btn"  id="restart-btn">Restart Quiz</button>
     </div>
     
 
