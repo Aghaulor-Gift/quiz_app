@@ -20,7 +20,7 @@
     </nav>
 
     <!--Quiz header -->
-      <h1>City Quiz</h1>
+    <h1>City Quiz</h1>
     
 
     <!-- Quiz container -->
@@ -44,12 +44,24 @@
           <input type="radio" name="option" value="D"> D) Rome
         </label>
       </div>
+
+      <!-- Navigation buttons -->
+
+      <button class="prev-btn" id="prev-btn"  style="display: none">Prev</button>
       <button class="next-btn" id="next-btn">Next</button>
+      <button class="submit-btn" style="display: none;" id="submit-btn">Submit</button>
     </div>
 
+  
     <!-- Result container -->
-    <div id="result-container" style="display: none;">
-      <h2>Your Score: <span id="score">0</span></h2>
+    <div class="result-container"   id="result-container" style="display: none;">
+      <!-- Feedback message -->
+      <div id="feedback">
+        <p>correct answer!</p>
+      </div>
+
+    <!-- Score display -->
+      <h2 class="header-2 ">Your Score: <span id="score">0</span></h2>
       <button class="restart-btn"  id="restart-btn">Restart Quiz</button>
     </div>
     

@@ -10,7 +10,6 @@ body {
   font-size: 18px;
   color: #f59a9a;
   margin-left: 40px;
-  
 }
 
 .navbar {
@@ -45,6 +44,11 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color: #333333;
+  text-align: center;
+}
+
 div.quiz-container {
   background-color: #f59a9a;
   border-radius: 8px;
@@ -52,5 +56,56 @@ div.quiz-container {
   max-width: 400px;
   margin: 0 auto;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font
+  box-sizing: border-box;
+  min-height: 60vh;
+}
+
+div.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Navigation Buttons */
+button.prev-btn,
+button.next-btn,
+button.submit-btn {
+  background-color: #333333;
+  border: none;
+  color: #e08a8a;
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.next-btn {
+  float: right;
+}
+
+button.submit-btn {
+  display: block;
+  width: 25%;
+  float: right;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+button.prev-btn:hover,
+button.next-btn:hover,
+button.submit-btn:hover {
+  color: #ffffff;
+}
+
+/* Result Section */
+button.restart-btn {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px#f59a9a solid;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
